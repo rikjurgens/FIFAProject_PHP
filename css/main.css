@@ -1,0 +1,94 @@
+@font-face{
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Light.eot') format('embedded-opentype'),
+    url('../fonts/OpenSans-Light.woff') format('woff'),
+    url('../fonts/OpenSans-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+	margin: 0;
+	font-family: "Open Sans";
+}
+
+header{ 
+	background-color: #444370; 
+	color: white; 
+} 
+ 
+h1{ 
+	font-size: 2em; 
+	text-align: center; 
+	padding-top: 1%; 
+	padding-bottom: 1%; 
+} 
+ 
+.index-split{ 
+	display: grid; 
+	grid-template-columns: 20% 60% 20%; 
+} 
+ 
+.splittwo{ 
+	grid-column: 2; 
+	margin-top: 3%; 
+} 
+ 
+.splitthree{ 
+	grid-column: 3; 
+} 
+ 
+.imggrid{ 
+	display: grid; 
+	grid-template-columns: 50% 50%; 
+} 
+ 
+.imggrid-splitone{ 
+	font-size: 3em; 
+	text-align: center; 
+} 
+ 
+img{ 
+	width: 101%; 
+} 
+ 
+a{ 
+	color: #c1bfbf; 
+	text-decoration: none; 
+} 
+ 
+.pbottem{ 
+	margin-bottom: 2%; 
+} 
+ 
+footer{ 
+	background-color: #444370; 
+	color: white; 
+} 
+ 
+footer p{ 
+	text-align: right; 
+	margin-right: 4%; 
+}
+
+/* login */
+
+.login-info{
+ color: white;
+ background-color: #444370;
+ text-align: center;
+ padding-top: 50px;
+ padding-bottom: 50px;
+ margin-bottom: 20px;
+}
+
+.loginindex-split{
+	display: grid;
+	grid-template-columns: 35% 30% 35%;
+}
+
+.loginsplittwo{
+	margin-bottom: 350px;
+	margin-top: 3%;
+	text-align: center;
+}
