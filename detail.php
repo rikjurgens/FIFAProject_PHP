@@ -45,6 +45,7 @@ $schedule = $query->fetchAll(PDO::FETCH_ASSOC);
         }
     ?>
 
+
 <?php
 
 if (!empty($schedule)) {
@@ -53,13 +54,23 @@ if (!empty($schedule)) {
 
 ?>
 
-    <?php
-        if ($user['admin'] == 1 && empty($schedule)) {
-        echo "<form action='createschedule.php' method='post'>
-            <input type='hidden' name='type' value='createcompetition'>
-            <br>
-            <input type='submit' value='Create competition'>
+<?php
+   if ($user['admin'] == 1 && empty($schedule)) {
+   echo "<form action='createschedule.php' method='post'>
+         <input type='hidden' name='type' value='createcompetition'>
+   <br>
+         <input type='submit' value='Create competition'>
         </form>";
         }
+?>
 
-        ?>
+
+
+<?php
+if ($user['admin'] == 1){
+    echo "<form action='fieldoverview.php' method='post'>
+        <br>
+        <input type='submit' value='Fields'>
+        </form>";
+}
+?>

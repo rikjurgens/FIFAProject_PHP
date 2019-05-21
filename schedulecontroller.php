@@ -30,7 +30,7 @@ if ($_POST['type'] === 'generate'){
         echo "niks ingevuld bij breakTime";
         exit;
     }
-    if (isset($_POST['resttimecheck']) && !empty($_POST['restTimecheck'])){
+    if (isset($_POST['resttimecheck']) && !empty($_POST['resttimecheck'])){
         if (isset($_POST['resttime']) && !empty($_POST['resttime'])) {
             $restTime = htmlentities(trim($_POST['resttime']));
         }
